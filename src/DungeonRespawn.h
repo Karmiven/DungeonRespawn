@@ -43,7 +43,7 @@ private:
     void CreateRespawnData(Player* /*player*/);
     void OnPlayerReleasedGhost(Player* /*player*/) override;
     bool OnPlayerBeforeTeleport(Player* /*player*/, uint32 /*mapid*/, float /*x*/, float /*y*/, float /*z*/, float /*orientation*/, uint32 /*options*/, Unit* /*target*/) override;
-    void OnMapChanged(Player* /*player*/) override;
+    void OnPlayerMapChanged(Player* /*player*/) override;
     void OnPlayerLogin(Player* /*player*/) override;
     void OnPlayerLogout(Player* /*player*/) override;
 };

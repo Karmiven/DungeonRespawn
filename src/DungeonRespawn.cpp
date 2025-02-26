@@ -207,7 +207,7 @@ PlayerRespawnData* DSPlayerScript::GetOrCreateRespawnData(Player* player)
     return GetOrCreateRespawnData(player);
 }
 
-void DSPlayerScript::OnMapChanged(Player* player)
+void DSPlayerScript::OnPlayerMapChanged(Player* player)
 {
     if (!player)
     {
