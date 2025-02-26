@@ -41,7 +41,7 @@ void DSPlayerScript::ResurrectPlayer(Player* player)
     player->SpawnCorpseBones();
 }
 
-bool DSPlayerScript::OnBeforeTeleport(Player* player, uint32 mapid, float /*x*/, float /*y*/, float /*z*/, float /*orientation*/, uint32 /*options*/, Unit* /*target*/)
+bool DSPlayerScript::OnPlayerBeforeTeleport(Player* player, uint32 mapid, float /*x*/, float /*y*/, float /*z*/, float /*orientation*/, uint32 /*options*/, Unit* /*target*/)
 {
     if (!drEnabled)
     {
@@ -257,11 +257,11 @@ void DSPlayerScript::CreateRespawnData(Player* player)
     newPrData.guid = player->GetGUID();
     newPrData.isTeleportingNewMap = false;
     newPrData.inDungeon = false;
-    
+
     respawnData.push_back(newPrData);
 }
 
-void DSPlayerScript::OnLogin(Player* player)
+void DSPlayerScript::OnPlayerLogin(Player* player)
 {
     if (!player)
     {
@@ -271,7 +271,7 @@ void DSPlayerScript::OnLogin(Player* player)
     GetOrCreateRespawnData(player);
 }
 
-void DSPlayerScript::OnLogout(Player* player)
+void DSPlayerScript::OnPlayerLogout(Player* player)
 {
     if (!player)
     {
