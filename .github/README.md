@@ -1,19 +1,19 @@
-# ![logo](https://raw.githubusercontent.com/azerothcore/azerothcore.github.io/master/images/logo-github.png) AzerothCore
+# ![logo](https://camo.githubusercontent.com/e4f036844d45424178f34d39dc3b0d52fdb82c07c5ef3c2aeb7e3da22c1538b3/68747470733a2f2f692e696d6775722e636f6d2f66517762386d332e706e67)Dungeon Respawn
 
-# Junk to Gold
-This module will automatically sell gray items when the player loots them
+## About
 
-```
-#
-#    JunkToGold.Enable
-#        Description: (Default: 1) Enable or Disable Module
-#        Default:     0 - Disabled
-#                     1 - Enabled
-#
+This module will teleport the player to the start of the dungeon on death.
 
-JunkToGold.Enable = 1
-```
+## Install
+
+Just clone the module into your modules directory for your server, re-run cmake and compile.
+
+Then enable the module in the module config.
+
+## Contact
+
+If you need any help you can join my [Discord Server](https://discord.gg/xdVPGcpJ8C).
 
 ## Credits
 
-- noisiver [Author of the idea and part of the initial code.](https://github.com/noisiver/mod-junk-to-gold)
+Thanks to Артём Борисов_99 from the AzerothCore Discord for the module suggestion.
